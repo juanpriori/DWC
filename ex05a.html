@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 5a</title>
+</head>
+<body>
+    <script>
+        var name;
+        var grade1;
+        var grade2;
+        var grade3;
+
+        name = prompt("Enter your name");
+        grade1 = prompt("Enter first grade");
+        grade2 = prompt("Enter second grade");
+        grade3 = prompt("Enter third grade");
+
+
+        var average = (parseInt(grade1) + parseInt(grade2) + parseInt(grade3)) / 3;
+        if (average >= 5) {
+            document.write("Congratulaions, " + name + ", you passed! Your average is: " + average);
+            
+        }else{
+            document.write("Sorry, " + name + ", you didn't pass. Your average is: " + avergage);
+        }
+    </script>
+</body>
+</html>
