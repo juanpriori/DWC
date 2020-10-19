@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 12e</title>
+</head>
+
+<body>
+    <script>
+        for (var x = 1; x <= 4; x++) {
+            var side1 = 0;
+            var side2 = 0;
+            var side3 = 0;
+
+            for (var y = x; y <= x; y++) {
+                side1 = prompt("Enter first side of triangle " + y);
+                side1 = parseInt(side1);
+                side2 = prompt("Enter second side of triangle " + y);
+                side2 = parseInt(side2);
+                side3 = prompt("Enter third side of triangle " + y);
+                side3 = parseInt(side3);
+            }
+            if (side1 == side2 && side1 == side3 && side2 == side3) {
+                document.write("Triangle " + x + " is equilateral" + "<br>");
+            } else if (side1 == side2 || side1 == side3 || side2 == side3) {
+                document.write("Triangle " + x + " is isosceles" + "<br>");
+            } else {
+                document.write("Triangle " + x + " is scalene" + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

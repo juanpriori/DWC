@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 11c</title>
+</head>
+
+<body>
+    <script>
+        var name;
+        var accNum;
+        var money;
+        var total = 0;
+        do {
+            name = prompt("Enter your name", "Type stop to exit");
+            if (name == "stop") {
+                break;
+            }
+            accNum = prompt("Enter account number");
+            accNum = parseInt(accNum);
+            money = prompt("Enter amount of money");
+            money = parseInt(money);
+
+
+            document.write(name + " is the owner of account number: " + accNum + " with a salary of: " + money + "€" + "<br>");
+
+            total++;
+        } while (name != "stop");
+
+
+        document.write("Total accounts: " + total);
+    </script>
+</body>
+
+</html>

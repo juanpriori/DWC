@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 8d</title>
+</head>
+
+<body>
+    <script>
+        var salary, years, incr20, incr5;
+        salary = prompt("Current salary:");
+        years = prompt("Years in company:");
+        incr20 = salary * .2;
+        incr5 = salary * 0.05;
+
+
+        if (salary < 500 && years >= 10) {
+            document.write("Your salary increment is: " + (incr20));
+        } else if (salary < 500 && years < 10) {
+            document.write("Your salary increment is: " + (incr5));
+        } else {
+            document.write("You have no salary increment.")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 13b</title>
+</head>
+
+<body>
+    <script>
+        var x1 = 0,
+            x2 = 0,
+            x3 = 0;
+        x1 = prompt("Enter first number");
+        x1 = parseInt(x1);
+        x2 = prompt("Enter second number");
+        x2 = parseInt(x2);
+        x3 = prompt("Enter third number");
+        x3 = parseInt(x3);
+
+        printasc(x1, x2, x3);
+
+        function printasc(x1, x2, x3) {
+            if (x1 > x2 && x1 > x3 && x2 > x3) {
+                document.write("Least: " + x3 + " Mid: " + x2 + " High: " + x1);
+            }
+            if (x1 > x2 && x1 > x3 && x3 > x2) {
+                document.write("Least: " + x2 + " Mid: " + x3 + " High: " + x1);
+            }
+            if (x2 > x1 && x2 > x3 && x1 > x3) {
+                document.write("Least: " + x3 + " Mid: " + x1 + " High: " + x2);
+            }
+            if (x2 > x1 && x2 > x3 && x3 > x1) {
+                document.write("Least: " + x3 + " Mid: " + x3 + " High: " + x2);
+            }
+            if (x3 > x1 && x3 > x2 && x1 > x2) {
+                document.write("Least: " + x2 + " Mid: " + x1 + " High: " + x3);
+            }
+            if (x3 > x1 && x3 > x2 && x2 > x1) {
+                document.write("Least: " + x1 + " Mid: " + x2 + " High: " + x3);
+            }
+        }
+
+
+
+        /*function ascendent(x1, x2, x3) {
+            if (x1 < x2 && x1 < x3 && x2 < x3) {
+                document.write("Least: " + x1 + " Med: " + x2 + " Last: " + x3);
+            }
+            if (x2 < x1 && x2 < x3 && x1 < x3) {
+                document.write("Least: " + x2 + " Med: " + x1 + " Last: " + x3);
+            }
+        }*/
+    </script>
+</body>
+
+</html>

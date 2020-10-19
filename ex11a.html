@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 11a</title>
+</head>
+
+<body>
+    <script>
+        var num;
+        var sum = 0;
+        do {
+            num = prompt("Enter a number");
+            num = parseInt(num);
+            sum = num + sum;
+
+
+        } while (num != 9999);
+
+
+        if (sum - 9999 >= 1) {
+            document.write(sum - 9999 + " POSITIVE");
+        } else if (sum - 9999 == 0) {
+            document.write(sum - 9999 + " ZERO");
+        } else {
+            document.write(sum - 9999 + " NEGATIVE");
+        }
+    </script>
+</body>
+
+</html>
