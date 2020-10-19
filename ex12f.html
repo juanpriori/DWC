@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 12f</title>
+</head>
+
+<body>
+    <script>
+        var countpos = 0;
+        var countneg = 0;
+        var countodd = 0;
+        var sumpair = 0;
+        for (x = 1; x <= 10; x++) {
+            var num = 0;
+            num = prompt("Enter number #" + x);
+            num = parseInt(num);
+
+            if (num >= 0) {
+                countpos++;
+            }
+            if (num < 0) {
+                countneg++;
+            }
+            if (num % 2 != 0) {
+                countodd++;
+            }
+            if (num % 2 == 0) {
+                sumpair = sumpair + num;
+            }
+
+        }
+
+        document.write("Positive numbers: " + countpos + "<br>");
+        document.write("Negative numbers: " + countneg + "<br>");
+        document.write("Odd numbers: " + countodd + "<br>");
+        document.write("Sum of even numbers: " + sumpair + "<br>");
+    </script>
+</body>
+
+</html>

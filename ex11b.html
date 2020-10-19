@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 11b</title>
+</head>
+
+<body>
+    <script>
+        var id;
+        var age;
+        var sex;
+        var name;
+        var sum = 0;
+        var sumMen = 0;
+        var sumWomen = 0;
+        var workers = 0;
+        var oldest = 0;
+        var oldestWoman;
+        var youngestMale;
+        var least = 0;
+        var nextAge = 0;
+
+        do {
+            id = prompt("Enter ID number");
+            id = parseInt(id);
+            if (id == 0) {
+                break;
+            }
+            age = prompt("Enter age");
+            age = parseInt(age);
+            sex = prompt("Enter sex");
+            name = prompt("Enter name");
+
+            sum++;
+            if (sex == "male") {
+                sumMen++;
+            } else {
+                sumWomen++;
+            }
+            if (age > 17 && age < 66 && sex == "male") {
+                workers++;
+            }
+            if (sex == "woman" && oldest < age) {
+                oldest = age;
+                oldestWoman = name;
+            }
+            /*if (sex == "male") {
+                least = age;
+                if(least.MIN_VALUE )
+                youngestMale = id;
+            }*/
+
+
+
+        } while (id != 0);
+
+        document.write("Total people: " + sum);
+        document.write("<br>");
+        document.write("Men: " + sumMen);
+        document.write("<br>");
+        document.write("Women: " + sumWomen);
+        document.write("<br>");
+        document.write("Men between 18 and 65: " + workers);
+        document.write("<br>");
+        document.write("Name of oldest woman : " + oldestWoman);
+        document.write("<br>");
+        /*document.write("ID youngest male : " + youngestMale);
+        document.write("<br>");*/
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 13d</title>
+</head>
+
+<body>
+    <script>
+        var dig = 0;
+        dig = prompt("Enter a number");
+        dig = parseInt(dig);
+
+        digits(dig);
+
+        function digits(num) {
+            if (num > 0 && num < 10) {
+                document.write("One digit");
+            } else if (num > 9 && num < 100) {
+                document.write("Two digits");
+            } else {
+                document.write("More than two digits");
+            }
+        }
+    </script>
+</body>
+
+</html>

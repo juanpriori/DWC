@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 12b</title>
+</head>
+
+<body>
+    <script>
+        var total = 0;
+        for (var x = 0; x < 10; x++) {
+            var num = 0;
+            num = prompt("Enter 10 numbers: ");
+            num = parseInt(num);
+
+            document.write(num + ", ");
+            while (x > 3 && x < 11) {
+                total = num + total;
+                break;
+            }
+        }
+        document.write(total);
+    </script>
+</body>
+
+</html>

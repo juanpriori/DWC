@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 12a</title>
+</head>
+
+<body>
+    <script>
+        var base1;
+        var height1;
+        var base2;
+        var height2;
+        var base3;
+        var height3;
+        var big = 0;
+
+        for (var x = 1; x <= 1; x++) {
+            base1 = prompt("Enter base of triangle 1");
+            base1 = parseInt(base1);
+            height1 = prompt("Enter height of triangle 1");
+            height1 = parseInt(height1);
+
+            base2 = prompt("Enter base of triangle 2");
+            base2 = parseInt(base2);
+            height2 = prompt("Enter height of triangle 2");
+            height2 = parseInt(height2);
+
+            base3 = prompt("Enter base of triangle 3");
+            base3 = parseInt(base3);
+            height3 = prompt("Enter height of triangle 3");
+            height3 = parseInt(height3);
+
+            var a1 = (base1 * height1) / 2;
+            var a2 = (base2 * height2) / 2;
+            var a3 = (base3 * height3) / 2;
+
+            document.write("Area triangle 1 : " + a1 + "<br>");
+            document.write("Area triangle 2 : " + a2 + "<br>");
+            document.write("Area triangle 3 : " + a3 + "<br>");
+
+            var count = 0;
+            if (a1 > 12) {
+                count++;
+            }
+            if (a2 > 12) {
+                count++;
+            }
+            if (a3 > 12) {
+                count++;
+            } else {
+                count = count;
+            }
+            document.write(count + " triangles have an area more than 12")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 12g</title>
+</head>
+
+<body>
+    <script>
+        var totalA = 0;
+        var totalB = 0;
+        var totalC = 0;
+        var avgA = 0;
+        var avgB = 0;
+        var avgC = 0;
+        for (var x = 1; x <= 5; x++) {
+            var grade = 0;
+            grade = prompt("Enter grade of student " + x);
+            grade = parseInt(grade);
+
+            totalA = grade + totalA;
+            avgA = totalA / x;
+        }
+        for (var x = 1; x <= 6; x++) {
+            var grade = 0;
+            grade = prompt("Enter grade of student " + x);
+            grade = parseInt(grade);
+
+            totalB = grade + totalB;
+            avgB = totalB / x;
+        }
+        for (var x = 1; x <= 11; x++) {
+            var grade = 0;
+            grade = prompt("Enter grade of student " + x);
+            grade = parseInt(grade);
+
+            totalC = grade + totalC;
+            avgC = totalC / x;
+        }
+        document.write("Average class A: " + avgA + "<br>");
+        document.write("Average class B: " + avgB + "<br>");
+        document.write("Average class C: " + avgC + "<br>");
+
+        if (avgA > avgB && avgA > avgC) {
+            document.write("Highest average is class A");
+        } else if (avgB > avgA && avgB > avgC) {
+            document.write("Highest average in class B");
+        } else {
+            document.write("Highest average is class C");
+        }
+    </script>
+</body>
+
+</html>
