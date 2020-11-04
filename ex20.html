@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 20</title>
+
+    <script>
+        function square() {
+            var s = document.getElementById("num").value;
+            s = parseInt(s);
+            alert(Math.sqrt(s));
+        }
+
+        function biggest() {
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            x = parseInt(x);
+            y = parseInt(y);
+            if (x > y) {
+                alert(x + " is the biggest number");
+            } else {
+                alert(y + " is the biggest number");
+            }
+
+        }
+
+        function conc() {
+            var x = document.getElementById("name").value;
+            var y = document.getElementById("lname").value;
+            alert(x + " " + y);
+        }
+    </script>
+</head>
+
+<body>
+    <h3>A</h3>
+    <!--20a-->
+    <form>
+        <input type="text" id="num" placeholder="enter a number">
+        <input type="button" onclick="square()" value="Square">
+    </form>
+    <hr>
+    <h3>B</h3>
+    <!--20b-->
+    <form>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <input type="button" onclick="biggest()" value="Biggest">
+    </form>
+    <hr>
+    <h3>C</h3>
+    <!--20c-->
+    <form>
+        <input type="text" id="name">
+        <input type="text" id="lname">
+        <input type="button" onclick="conc()" value="Concat">
+    </form>
+
+</body>
+
+</html>

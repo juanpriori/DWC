@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 21</title>
+    <script>
+        function pass() {
+            var x = document.getElementById("p1").value;
+            var y = document.getElementById("p2").value;
+
+            if (x == y) {
+                alert("Passwords correct");
+            } else {
+                alert("Passwords do not match");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        Enter pass: <input type="password" id="p1"> Re-enter pass: <input type="password" id="p2">
+        <input type="button" onclick="pass()" value="Check">
+    </form>
+
+</body>
+
+</html>

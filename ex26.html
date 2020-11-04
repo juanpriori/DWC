@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 26</title>
+</head>
+
+<body>
+    <script>
+        function password() {
+            var p1 = document.getElementById("p1").value.length;
+            if (p1 < 7) {
+                alert("Too short");
+            } else if (p1 > 20) {
+                alert("Too Long");
+            } else {
+                alert("OK");
+            }
+        }
+    </script>
+    <form>
+        <input type="password" name="p1" id="p1">
+        <input type="button" value="Enter" onclick="password()">
+    </form>
+</body>
+
+</html>

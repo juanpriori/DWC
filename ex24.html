@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 24</title>
+</head>
+
+<body>
+    <script>
+        function showSelected() {
+            if (document.getElementById('radio1').checked) {
+                alert("You can`t visit the website");
+            }
+            if (document.getElementById('radio2').checked) {
+                alert("You are allowed to visit the website");
+            }
+        }
+    </script>
+    <form>
+        <input type="radio" id="radio1" name="A">Under 18 <br/>
+        <input type="radio" id="radio2" name="B">Over 18 <br/>
+        <input type="button" value="Mostrar" onClick="showSelected()">
+    </form>
+</body>
+
+</html>

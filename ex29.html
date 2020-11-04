@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 29</title>
+</head>
+
+<body>
+    <script>
+        function openWindowParameters() {
+            var w = open('', '', 'status=yes,width=600,height=300,menubar=yes');
+            w.document.write('<button type="button" onclick="javascript:window.close()">Close</button>');
+        }
+    </script>
+    <input type="button" value="Open Window with Parameters" onClick="openWindowParameters()">
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 23</title>
+</head>
+
+<body>
+    <script>
+        function showSelected() {
+            var valfoot;
+            var valtenn;
+            var valkar;
+            if (document.getElementById('checkbox1').checked) {
+                valfoot = "Football";
+            } else {
+                valfoot = " ";
+            }
+            if (document.getElementById('checkbox2').checked) {
+                valtenn = "Tennis";
+            } else {
+                valtenn = " ";
+            }
+            if (document.getElementById('checkbox3').checked) {
+                valkar = "Karate";
+            } else {
+                valkar = " ";
+            }
+
+            alert(valfoot + " " + valtenn + " " + valkar);
+        }
+    </script>
+    <form>
+        <input type="checkbox" id="checkbox1">Football
+        <br>
+        <input type="checkbox" id="checkbox2">Tennis
+        <br>
+        <input type="checkbox" id="checkbox3">Karate
+        <br>
+        <input type="button" value="Count" onClick="showSelected()">
+    </form>
+</body>
+
+</html>

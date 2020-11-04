@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 22a</title>
+</head>
+
+<body>
+    <script>
+        function price() {
+            var sel1 = document.getElementById("Processor").value;
+            var sel2 = document.getElementById("Monitor").value;
+            var sel3 = document.getElementById("HardDisk").value;
+
+            /*var proc = document.getElementById("txt1").value = sel1.value;
+            var mon = document.getElementById("txt1").value = sel2.value;
+            var hd = document.getElementById("txt1").value = sel3.value;*/
+            sel1 = parseInt(sel1);
+            sel2 = parseInt(sel2);
+            sel3 = parseInt(sel3);
+
+            var total = (sel1 + sel2 + sel3);
+
+            document.getElementById("txt1").value = total;
+
+        }
+    </script>
+
+    <form action="">
+        <select id="Processor">
+            <option value="400">Intel I3</option>
+            <option value="600">Intel I5</option>
+            <option value="800">Intel I7</option>
+        </select>
+        <select id="Monitor">
+            <option value="250">Samsung '20</option>
+            <option value="350">Samsung '22</option>
+            <option value="550">Samsung '26</option>
+        </select>
+        <select id="HardDisk">
+            <option value="300">500 GB</option>
+            <option value="440">1 TB</option>
+            <option value="500">3 TB</option>
+        </select>
+        <br>
+        <input type="button" onclick="price()" value="Calculate Price">
+        <br> Total Price: <input type="text" id="txt1">
+    </form>
+</body>
+
+</html>

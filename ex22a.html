@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 22b</title>
+</head>
+
+<body>
+    <script>
+        function price() {
+            var sel = document.getElementById("select1");
+            document.getElementById("txt1").value = sel.value;
+        }
+    </script>
+
+    <form action="">
+        <select onclick="price()" id="select1">
+            <option value="6€">Pepperoni</option>
+            <option value="5€">Quatro Formaggi</option>
+            <option value="4€">Proscciuto</option>
+        </select>
+        <br> Selected Pizza: <input type="text" id="txt1">
+    </form>
+</body>
+
+</html>
