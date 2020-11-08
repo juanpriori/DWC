@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 3</title>
+    <script src="jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li class="a">1</li>
+        <li class="b">2</li>
+        <li class="c">3</li>
+        <li class="d">4</li>
+    </ul>
+    <script>
+        $(document).ready(function() {
+            $(".a").click(function() {
+                $("li.a").hide();
+            })
+            $(".b").click(function() {
+                $("li.b").hide();
+            })
+            $(".c").click(function() {
+                $("li.c").hide();
+            })
+            $(".d").click(function() {
+                $("li.d").hide();
+            })
+        })
+    </script>
+</body>
+
+</html>

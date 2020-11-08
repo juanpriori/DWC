@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 1</title>
+    <script src="jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <p id="p1">P1</p>
+    <p id="p2">P2</p>
+
+    <script>
+        $(document).ready(function() {
+            $("#p2").click(function() {
+                alert("You pressed on P2");
+            });
+        });
+    </script>
+    <hr>
+    <hr>
+    <table>
+        <th>
+            <tr id="r1">
+                <th>row1</th>
+            </tr>
+            <tr id="r2">
+                <th>row2</th>
+            </tr>
+        </th>
+    </table>
+    <script>
+        var x = $("#r1");
+        var y = $("#r2")
+        $(document).ready(function() {
+            x.click(function() {
+                x.css("background-color", "#ff0000");
+            });
+            y.click(function() {
+                y.css("background-color", "#ff6515");
+            });
+        });
+    </script>
+</body>
+
+</html>

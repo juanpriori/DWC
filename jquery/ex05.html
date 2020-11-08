@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 5</title>
+    <script src="jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <h1>Uno</h1>
+    <p class="a">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, amet?</p>
+    <br>
+    <h1>Dos</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facilis quos beatae?</p>
+    <br>
+    <h1>Tres</h1>
+    <p class="b">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia consequatur placeat odit modi itaque!</p>
+    <br>
+    <h1>Cuatro</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <h1>Cinco</h1>
+    <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi debitis.</p>
+
+    <button id="b1">Change 1</button>
+    <button id="b2">Change 3</button>
+    <button id="b3">Change 5</button>
+
+
+    <script>
+        var x = $(".a");
+        var y = $(".b");
+        var z = $(".c");
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                x.css("font-size", "10px");
+            })
+            $("#b2").click(function() {
+                y.css("font-size", "15px");
+            })
+            $("#b3").click(function() {
+                z.css("font-size", "20px");
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 8</title>
+    <script src="jquery-3.5.1.js"></script>
+    <style>
+        .thd {
+            background-color: cadetblue;
+        }
+        
+        .tbd {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1">
+        <thead class="thd">
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody class="tbd">
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="b1">Add</button>
+    <button id="b2">Remove</button>
+    <script>
+        $(document).ready(function() {
+
+            $("#b1").click(function() {
+                var x = $("tbody");
+                var y = $("thead")
+                x.addClass("tbd");
+                y.addClass("thd");
+            });
+
+            $("#b2").click(function() {
+                var i = $("tbody");
+                var j = $("thead")
+                i.removeClass("tbd");
+                j.removeClass("thd");
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>

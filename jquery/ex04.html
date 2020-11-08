@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 4</title>
+    <script src="jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <table id="t1" border="1">
+        <tr id="a">
+            <th>OneColor</th>
+        </tr>
+        <tr id="b">
+            <th>TwoColor</th>
+        </tr>
+        <tr id="c">
+            <th>ThreeColor</th>
+        </tr>
+    </table>
+    <hr>
+
+    <table id="t2" border="1">
+        <tr id="a1">
+            <th>OneFont</th>
+        </tr>
+        <tr id="b1">
+            <th>TwoFont</th>
+        </tr>
+        <tr id="c1">
+            <th>ThreeFont</th>
+        </tr>
+    </table>
+
+
+    <script>
+        var x = $("#a");
+        var y = $("#b");
+        var z = $("#c");
+
+        var x1 = $("#a1");
+        var y1 = $("#b1");
+        var z1 = $("#c1");
+
+        $(document).ready(function() {
+            $("#a").click(function() {
+                x.css("background-color", "#ff0000");
+                x1.css("font-size", "20px");
+            })
+
+            $("#b").click(function() {
+                y.css("background-color", "#ff8745");
+                y1.css("font-size", "20px");
+            })
+
+            $("#c").click(function() {
+                z.css("background-color", "#ff3649");
+                z1.css("font-size", "20px");
+            })
+        })
+    </script>
+</body>
+
+</html>

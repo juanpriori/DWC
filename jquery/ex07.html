@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 7</title>
+    <script src="jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+    <a href="#">click me</a><br>
+    <button id="b1">google</button>
+    <button id="b2">youtube</button>
+    <button id="b3">amazon</button>
+    <script>
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                $("a").attr("href", "https://www.google.com")
+            })
+            $("#b2").click(function() {
+                $("a").attr("href", "https://www.youtube.com")
+            })
+            $("#b3").click(function() {
+                $("a").attr("href", "https://www.amazon.com")
+            })
+        });
+    </script>
+
+</body>
+
+</html>
