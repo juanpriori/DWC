@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 15</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .div {
+            height: 70px;
+            width: 800px;
+            background-color: greenyellow;
+        }
+        
+        .div1 {
+            height: 250px;
+            width: 250px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div"></div>
+
+    <script>
+        $(document).ready(function() {
+            $(".div").dblclick(function() {
+                $(this).toggleClass("div1");
+            })
+        });
+    </script>
+
+</body>
+
+</html>

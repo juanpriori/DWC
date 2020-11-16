@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 21</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="1">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#1").click(function() {
+                $("#1").fadeTo("slow", 0.2)
+            })
+            $("#1").dblclick(function() {
+                $("#1").fadeTo("fast", 1)
+            })
+        });
+    </script>
+
+</body>
+
+</html>

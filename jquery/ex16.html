@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 16</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .txt {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input class="txt" type="text"><br><br>
+        <input class="txt" type="text">
+    </form>
+    <script>
+        $(document).ready(function() {
+            $(".txt").focusin(function() {
+                $(this).css("background-color", "red")
+            });
+            $(".txt").focusout(function() {
+                $(this).css("background-color", "blue")
+            });
+        });
+    </script>
+
+</body>
+
+</html>

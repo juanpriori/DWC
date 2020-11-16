@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 13</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .div {
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div"></div>
+    <p onmousemove="event()" id="corx"></p>
+    <p onmousemove="event()" id="cory"></p>
+    <p id="p"></p>
+    <script>
+        $(document).ready(function() {
+
+            $(".div").mouseover(function(event) {
+                var x;
+                x = $("#corx");
+                x.text("coordinate x= " + event.clientX);
+                x = $("#cory");
+                x.text("coordinate y= " + event.clientY);
+                $("#p").text("Inside div");
+            })
+
+            $(".div").mouseout(function() {
+                $("#p").text("Outside div");
+            })
+        });
+    </script>
+
+</body>
+
+</html>

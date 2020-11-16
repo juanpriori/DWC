@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 23</title>
+    <!--<script src="jquery-3.5.1.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a id="l" href="https://www.amazon.es">Amazon.es</a><br>
+    <a id="l" href="https://www.amazon.com">Amazon.com</a><br>
+    <a id="l" href="https://www.mcdonalds.es">Mac.es</a><br>
+    <a id="l" href="https://www.mcdonalds.com">Mac.com</a><br>
+
+    <script>
+        $(document).ready(function() {
+            $("a[href$='.es']").each(function() {
+                $(this).css("color", "red");
+            })
+        });
+    </script>
+
+</body>
+
+</html>

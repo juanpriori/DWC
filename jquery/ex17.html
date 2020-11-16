@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 17</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <input id="i1" class="txt" type="text">
+        <p></p>
+    </form>
+    <script>
+        $(document).ready(function() {
+            $(".txt").focusin(function() {
+                $("p").text("")
+                $(this).css("background-color", "yellow")
+            });
+            $(".txt").focusout(function() {
+                var x = document.getElementById("i1").value;
+                if (x != "") {
+                    $("p").text("OK");
+                } else {
+                    alert("Field cant be empty");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
