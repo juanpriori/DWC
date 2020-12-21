@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+        
+        .green {
+            color: green;
+        }
+        
+        .blue {
+            color: blue;
+        }
+        
+        .courier {
+            font-family: Courier;
+        }
+        
+        .arial {
+            font-family: Arial;
+        }
+        
+        .verdana {
+            font-family: Verdana;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Edit Styles</h2>
+    <textarea cols="150" rows="10" id="txt"></textarea><br/> Font:
+    <select id="sfont">
+                <option value="courier">Courier</option>
+                <option value="verdana">Verdana</option>
+                <option value="arial">Arial</option>
+        </select> &nbsp; COLOR:
+    <select id="scolor">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+        </select> &nbsp; SIZE:
+    <input type="text" value="10" id="txtsize" size="15" />
+    <button id="b1">Apply</button>
+    <button id="b2">Reset</button>
+    <hr/>
+    <div>
+        <p id="text"></p>
+    </div>
+
+    <script>
+        function resetStyles() {
+            $("#text").removeClass("red");
+            $("#text").removeClass("green");
+            $("#text").removeClass("blue");
+            $("#text").removeClass("arial");
+            $("#text").removeClass("courier");
+            $("#text").removeClass("verdana");
+            $("#text").css("fontSize", "10px");
+        }
+
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                resetStyles();
+                var myText = $("#txt").val();
+                $("#text").text(myText);
+                var myColor = $("#scolor").val();
+                switch (myColor) {
+                    case "red":
+                        $("#text").addClass("red");
+                        break;
+                    case "green":
+                        $("#text").addClass("green");
+                        break;
+                    case "blue":
+                        $("#text").addClass("blue");
+                        break;
+                }
+                var myFont = $("#sfont").val();
+                switch (myFont) {
+                    case "courier":
+                        $("#text").addClass("courier");
+                        break;
+                    case "verdana":
+                        $("#text").addClass("verdana");
+                        break;
+                    case "arial":
+                        $("#text").addClass("arial");
+                        break;
+                }
+                var mySize = $("#txtsize").val() + "px";
+                $("#text").css("fontSize", mySize);
+            });
+
+            $("#b2").click(function() {
+                resetStyles();
+                var myText = $("#txt").val();
+                $("#text").text(myText);
+            });
+        });
+    </script>
+</body>
+
+</html>

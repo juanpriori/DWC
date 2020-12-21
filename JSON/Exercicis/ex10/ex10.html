@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FORM VALIDATION Bootstrap.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <h1> Form Validation</h1>
+                <div class="card card-body">
+                    <form>
+
+                        <div class="form-group">
+                            <label>Min Text</label>
+                            <input id="myMin" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input id="myEmail" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Required</label>
+                            <input id="myRequired" class="form-control" required="required" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input id="myPassword" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input id="myPasswordConfirm" class="form-control" />
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.1.3/dist/bootstrap-validate.js"></script>
+    <script>
+        bootstrapValidate('#myMin', 'min:5:Enter at least 5 characters!');
+        bootstrapValidate('#myEmail', 'email:Enter a valid email address!');
+        bootstrapValidate('#myRequired', 'required:It is a required input!');
+        bootstrapValidate('#myPassword', 'matches:#myPasswordConfirm:Passwords must match!');
+        bootstrapValidate('#myPasswordConfirm', 'matches:#myPassword:Passwords must match!');
+    </script>
+</body>
+
+</html>

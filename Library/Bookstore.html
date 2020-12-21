@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+</head>
+
+<body>
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title"><br><br>
+    <label for="numpag">Nº of Pages:</label>
+    <input type="text" name="numpag" id="numpag"><br><br>
+    <label for="category">Category:</label>
+    <select name="category" id="category">
+            <option value="classic">Classic</option>
+            <option value="science">Science</option>
+            <option value="comedy">Comedy</option>
+        </select><br><br>
+    <label for="col">Position(COL/ROW):</label>
+    <select name="col" id="col">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+    <select name="row" id="row">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select><br>
+    <button id="add">Add Book</button>
+    <button id="remove">Remove Book</button>
+    <button id="printBooks">Print Books</button>
+    <button id="printLibrary">Print Library</button>
+    <button id="num">Total Books</button>
+    <div id="print">
+
+    </div>
+    <hr>
+
+
+
+
+
+    <script>
+        //crear clase Book e iniciar array
+        var books = new Array();
+
+        function Book(title, numPages, category, posCol, posRow) {
+            this.title = title;
+            this.numPages = numPages;
+            this.category = category;
+            this.posCol = posCol;
+            this.posRow = posRow;
+        }
+        //grab books position
+        function posBook(col, row) {
+
+        }
+        //deletes book in position
+        function removeBook(col, row) {
+
+        }
+        //prints the table
+        function printTable(col, row) {
+
+        }
+
+        $(document).ready(function() {
+            //add book
+            $("#add").click(function() {
+                var title = $("#title").val;
+                var numpage = $("#numpag").val;
+                var category = $("#category").val;
+                var col = $("#col").val;
+                var row = $("#row").val;
+
+                book = new Book(title, numpage, category, col, row);
+                books.push(book);
+                // library = printTable(3, 3);
+                // $("#print").html(library)
+            });
+            //remove book
+            $("#remove").click(function() {
+
+            });
+            //print books in a list
+            $("#printBooks").click(function() {
+
+            });
+            //print Library
+            $("#printLibrary").click(function() {
+
+            });
+            //print number of books
+            $("#num").click(function() {
+                alert("Total Books: ");
+            });
+        })
+    </script>
+</body>
+
+</html>
